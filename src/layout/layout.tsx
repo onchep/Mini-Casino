@@ -14,7 +14,7 @@ const Layout = ({
                 {children}
             </main>
             <footer className="bg-dark-900 text-white p-4 text-center">
-                <p>&copy; 2025 www.fasagame.com</p>
+                <p>&copy; 2025 www.game.com</p>
             </footer>
         </div>
     )

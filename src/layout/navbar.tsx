@@ -1,4 +1,3 @@
-
 'use client'
 import React from "react";
 import {
@@ -10,9 +9,9 @@ import {
     NavbarContent,
     NavbarItem,
     Link,
-    Button,
 } from "@heroui/react";
 import { MenuList } from "@/components/Sidebar/menulist";
+import { AppKitConnectButton } from "@reown/appkit/react"; 
 
 export const AcmeLogo = () => {
     return (
@@ -45,37 +44,22 @@ const CustomNavbar = () => {
             <NavbarContent className="sm:hidden pr-3" justify="center">
                 <NavbarBrand>
                     <AcmeLogo />
-                    <p className="font-bold text-inherit">FasaGame</p>
+                    <p className="font-bold text-inherit">MiniCasino</p>
                 </NavbarBrand>
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarBrand>
                     <AcmeLogo />
-                    <p className="font-bold text-inherit">FasaGame</p>
+                    <p className="font-bold text-inherit">MiniCasino</p>
                 </NavbarBrand>
-                {/* <NavbarItem>
-                    <Link color="foreground" href="#">
-                        Features
-                    </Link>
-                </NavbarItem>
-                <NavbarItem isActive>
-                    <Link aria-current="page" href="#">
-                        Customers
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link color="foreground" href="#">
-                        Integrations
-                    </Link>
-                </NavbarItem> */}
+                {/* Desktop menu items can go here */}
             </NavbarContent>
 
             <NavbarContent justify="end">
                 <NavbarItem>
-                    <Button as={Link} color="danger" href="#" variant="flat" className="border border-red-500 text-white">
-                        Connect
-                    </Button>
+                    {/* FIX 1: Use the correct component 'AppKitConnectButton' */}
+                    <AppKitConnectButton />
                 </NavbarItem>
             </NavbarContent>
 
@@ -84,11 +68,9 @@ const CustomNavbar = () => {
                     <NavbarMenuItem key={`${item}-${index}`} className="w-1/2 bg-dark-500 py-2 px-4 rounded-lg">
                         <Link
                             className="text-white w-full hover:text-success-500"
-                            color={
-                                "foreground"
-                            }
+
                             href={item.path}
-                            size="lg"
+                            
                         >
                             {item.title}
                         </Link>
