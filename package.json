@@ -11,6 +11,9 @@
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
     "@heroui/react": "^2.7.8",
+    "@reown/appkit": "^1.8.13",
+    "@reown/appkit-adapter-wagmi": "^1.8.13",
+    "@tanstack/react-query": "^5.90.7",
     "@types/crypto-js": "^4.2.2",
     "axios": "^1.7.2",
     "crypto-js": "^4.2.0",
@@ -18,7 +21,9 @@
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "socket.io-client": "^4.8.1"
+    "socket.io-client": "^4.8.1",
+    "viem": "^2.38.6",
+    "wagmi": "^2.19.2"
   },
   "devDependencies": {
     "@types/node": "^20",
